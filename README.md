@@ -10,6 +10,7 @@ This repository hosts the materials for the Diffusion Models Course. All homewor
   `HW{#assignment}_{id}.{extension}`  
   Images within the zip file should be in **png** or **jpg** format.
 - Grading will be based on both the correctness of the code and the quality of the outputs. Appeals should be sent via email to the homework grader. Appeals regarding the amount of points deducted will not be entertained.
+- 10 points will be deducted from the homework grade for each day it is submitted late.
 - Questions about the homework will be answered only in the dedicated forum on Moodle. Emails to the course faculty regarding homework will not be answered.
 - Unless explicitly stated, answers to questions in the forum apply to everyone and should be treated as an extension of the assignment's guidelines. It is recommended to review all forum questions before submission.
 - For personal issues regarding the homework, please reach out to either TA by email.
