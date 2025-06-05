@@ -152,7 +152,7 @@ class DiffusionModule(nn.Module):
            x_t_prev (`torch.Tensor`): one step denoised sample. (= $x_{\tau_{i-1}}$)
         """
         ######## TODO ########
-        # NOTE: This code is used for assignment 2. You don't need to implement this part for assignment 1.
+        # NOTE:
         # DO NOT change the code outside this part.
         # compute x_t_prev based on ddim reverse process.
         alpha_prod_t = extract(self.var_scheduler.alphas_cumprod, t, xt)
@@ -179,7 +179,7 @@ class DiffusionModule(nn.Module):
             x0_pred (`torch.Tensor`): The final denoised output through the DDPM reverse process.
         """
         ######## TODO ########
-        # NOTE: This code is used for assignment 2. You don't need to implement this part for assignment 1.
+        # NOTE: 
         # DO NOT change the code outside this part.
         # sample x0 based on Algorithm 2 of DDPM paper.
         step_ratio = self.var_scheduler.num_train_timesteps // num_inference_timesteps

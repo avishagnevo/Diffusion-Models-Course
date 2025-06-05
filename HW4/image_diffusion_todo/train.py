@@ -131,15 +131,15 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--gpu", type=int, default=0)
-    parser.add_argument("--batch_size", type=int, default=16)
+    parser.add_argument("--batch_size", type=int, default=8) # you can change this to 10 or 16 if you have more GPU memory
     parser.add_argument(
         "--train_num_steps",
         type=int,
-        default=100000,
-        help="the number of model training steps.",
+        default=50000,
+        help="the number of model training steps.", # you can change this
     )
     parser.add_argument("--warmup_steps", type=int, default=200)
-    parser.add_argument("--log_interval", type=int, default=200)
+    parser.add_argument("--log_interval", type=int, default=2000) # you can change this
     parser.add_argument(
         "--max_num_images_per_cat",
         type=int,
