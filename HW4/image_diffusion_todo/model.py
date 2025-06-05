@@ -69,7 +69,7 @@ class DiffusionModule(nn.Module):
                     class_label=class_label,
                 )
 
-            x_t_prev = self.var_scheduler.step(x_t, t, noise_pred)
+            x_t_prev = self.var_scheduler.step(x_t, t.to(self.device), noise_pred)
 
             traj[-1] = traj[-1].cpu()
             traj.append(x_t_prev.detach())
